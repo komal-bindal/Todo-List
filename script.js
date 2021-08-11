@@ -19,3 +19,10 @@ const addHandleClick = () => {
 };
 
 add.onclick = addHandleClick;
+
+inputElement.onkeypress = (e) => {
+    if (e.which == 13) {
+      e.preventDefault();
+      addHandleClick();
+    }
+  };
