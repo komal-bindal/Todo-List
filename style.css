@@ -1,0 +1,13 @@
+.listItem {
+    border: 2px gray solid;
+    padding: 8px 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #list li.disabled {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 400;
+  }
