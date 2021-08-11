@@ -21,8 +21,17 @@ const addHandleClick = () => {
 add.onclick = addHandleClick;
 
 inputElement.onkeypress = (e) => {
-    if (e.which == 13) {
-      e.preventDefault();
-      addHandleClick();
-    }
-  };
+  if (e.which == 13) {
+    e.preventDefault();
+    addHandleClick();
+  }
+};
+
+reset.onclick = () => (inputElement.value = "");
+
+cleanup.onclick = () => {
+  let doneTasks = list.getElementsByClassName("disabled");
+  while (doneTasks.length > 0) {
+    doneTasks[0].remove();
+  }
+};
