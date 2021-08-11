@@ -35,3 +35,10 @@ cleanup.onclick = () => {
     doneTasks[0].remove();
   }
 };
+
+sort.onclick = () => {
+  let doneTasks = list.getElementsByClassName("disabled");
+  for (i = 0; i < doneTasks.length; i++) {
+    list.append(list.getElementsByClassName("disabled")[0]);
+  }
+};
